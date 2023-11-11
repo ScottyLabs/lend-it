@@ -12,8 +12,8 @@
 
 Populate `.env`. Then run
 
-```
- yarn
- npx prisma db push
- yarn dev
+```bash
+yarn install
+yarn prisma generate
+yarn dev
 ```
