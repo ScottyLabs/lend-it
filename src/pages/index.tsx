@@ -5,6 +5,7 @@ import { trpc } from "../utils/trpc";
 
 function AuthShowcase() {
   const { data: secretMessage } = trpc.auth.getSecretMessage.useQuery();
+  const data = trpc.item.get.useQuery({id: "1"});
 
   const { data: sessionData } = useSession();
 
